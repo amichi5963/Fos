@@ -1,0 +1,11 @@
+newmtl ProBuilderDefault
+map_Kd GridBox_Default.png
+Kd 1 1 1
+d 1
+
+newmtl stoneEnvironment
+map_Kd [gj.jpeg
+bump [gj_n.jpg
+Kd 0.6698113 0.5187587 0.3563901
+d 1
+

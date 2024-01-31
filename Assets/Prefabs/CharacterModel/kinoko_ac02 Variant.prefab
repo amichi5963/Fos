@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2535513919484590831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 14.1670265
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14.1670265
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14.1670265
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_Name
+      value: kinoko_ac02 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b45beb3478f6bb6428ac66229f19a599, type: 2}
+    - target: {fileID: 5866666021909216657, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6509588484127329943}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 435914478948929030}
+  m_SourcePrefab: {fileID: 100100000, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+--- !u!1 &3453871310090979262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bf3770a6e4e15004387ef60e13b17e50, type: 3}
+  m_PrefabInstance: {fileID: 2535513919484590831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6509588484127329943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3453871310090979262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 88727e8073399a940bc5f5172743ab6a, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 435914478948929030}
+        m_TargetAssemblyTypeName: PlayerAnimationStateController, Assembly-CSharp
+        m_MethodName: Run
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2639ee13-5aa0-464d-9e08-d5fd77801563
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7fcaead8-f99d-44c2-ab31-dfe2852407ed
+    m_ActionName: Player/Throw[/Keyboard/enter,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c0b7833a-aeee-4d62-8a76-6362cfe3e59f
+    m_ActionName: Player/Release[/Keyboard/b]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 369b7498-22e6-4232-b4d9-57d40cc7c987
+    m_ActionName: Player/Menu[/Mouse/scroll,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 39ad7ef2-5591-44b0-9e7d-e4d0d7fa73e5
+    m_ActionName: Player/Attack[/Mouse/leftButton,/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45985a5f-4d20-4597-8a09-461195764d49
+    m_ActionName: Player/Cancel[/Keyboard/escape,/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 011eb8a9-8abd-4597-b3fc-86e1c2d243e8
+    m_ActionName: Player/Camera_XY[/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 435914478948929030}
+        m_TargetAssemblyTypeName: PlayerAnimationStateController, Assembly-CSharp
+        m_MethodName: SkillStart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d1ff3cb4-12c7-43eb-8b7d-86b2e82855af
+    m_ActionName: Player/SkillStart[/Keyboard/v]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 522c8298-6b02-475b-b1dc-ee244bde6f1a
+    m_ActionName: Player/SkillCancel[/Keyboard/v]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7438e762-0ea5-47c8-bf5d-88e8505becb3
+    m_ActionName: Player/StoneUp[/XInputControllerWindows/dpad/up,/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e6cc6eed-ef32-4c1d-9336-b82c626f5d6d
+    m_ActionName: Player/StoneDown[/XInputControllerWindows/dpad/down,/Keyboard/z]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9e43b715-09f2-44a8-94d8-38991fdc38c0
+    m_ActionName: Player/Enter[/XInputControllerWindows/buttonSouth,/Keyboard/enter,/Keyboard/space,/Mouse/leftButton]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &435914478948929030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3453871310090979262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29768cd9620298049acbca92a4781845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
