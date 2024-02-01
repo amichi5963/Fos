@@ -11,32 +11,50 @@ Unity
 メインプログラマーとして、UIやロード処理、スコア処理を除いた処理のほとんどを作成しました。
 ### Assets/Scripts内
 C#スクリプトです。大体は自作ですが、数が多いため特に工夫したもののみについて紹介します。
-#### AnimeStarter
+#### AnimeStarterScript
+[リンク](Assets/Scripts/AnimeStarterScript.cs)
+
 ギミックが作動した際にアニメーションの再生速度を1.0にするスクリプトです。
 扉やリフトに使い、この際カメラを動かす演出を行うためアニメーションの再生タイミングを変えられるようになっています。
-#### BreakavleObject
+#### BreakableObject
+[リンク](Assets/Scripts/BreakableObject.cs)
+
 アニメーションをそのまま再生するとガレキがその場に残って邪魔だし、急に消えるのも違和感があるのでBoxColliderのisTriggerをtrueに、RigidbodyのisKinematicをfalseにすることで地面を貫通して落下していくようにしました。
 #### GoalUnit
+[リンク](Assets/Scripts/GoalUnit.cs)
+
 ギミックを作動させる鐘のスクリプトです。
 Ring()によって鐘を鳴らす処理を行います。1フレーム中に複数回行われた場合アニメーションや音がおかしくなるので、そのようにはならないようにしました。
 #### LightMover
+[リンク](Assets/Scripts/LightMover.cs)
+
 収集アイテムに対しプレイヤーが接近したらプレイヤーに吸い込まれるように動くスクリプトです。
 元々は触れると取れるようにしていたのですが、思っていたよりも取りにくかったので作成しました。
 #### Monster
+[リンク](Assets/Scripts/Monster.cs)
+
 モンスターの行動を処理するスクリプトです。
 NavmeshAgentによる移動とRigidBodyによる移動を使い分けることで石は石らしく、草は草らしく動くようにしました。
 #### MoveGround
+[リンク](Assets/Scripts/MoveGround.cs)
+
 移動するオブジェクトに付け、プレイヤーを足場の子にすることで足場に追従するようにします。
 キャラクターの形がおかしくなるバグが発生してしまった際、その原因が足場から離れた際にScaleが足場のlocalScaleのままになってしまっていたからだということが分かったためそれを解消する処理を追加しました。
 #### PlayerController
+[リンク](Assets/Scripts/PlayerController.cs)
+
 プレイヤーの行動を処理するスクリプトです。
 チーム内の他プログラマーが作成した、入力を受け取るためのPlayerMoverというクラスを継承しています。
 寄生したキャラクターとの対応に関する部分を頑張りました。
 #### StepSE
+[リンク](Assets/Scripts/StepSE.cs)
+
 キャラクターの足音を鳴らすスクリプトです。
 一定時間おきにランダムなピッチで足音を鳴らすことで機械的な印象を与えないようにしました。
 isMovingを切り替えることで空中などでは足音を鳴らさないようにできます。
 #### ThreeGoalUnit
+[リンク](Assets/Scripts/ThreeGoalUnit.cs)
+
 鐘を鳴らしたときの判定を行うスクリプトです。
 rings[]に含まれる一つあるいは複数の鐘が一定時間内に全て鳴らされた場合、goal[]に含まれるギミックの有効化を切り替えます。
 開発初期に作ったもので、アニメーションが設定されてない扉などを消すために作ったもので、AnimeStarterはこれに合わせてStartで初期化してUpdateで戻すという処理を行う形になりました。
@@ -67,3 +85,8 @@ Priorityの高いCinemachineVirtualCameraと見えない壁のPlaneを有効化�
 沼にプレイヤーが嵌まっているときに音がくぐもっているようにするためにAudioReverbZoneを追加しました。
 #### Zhong(2)Variant
 ギミックを作動させるための鐘のPrefabです。
+
+## チーム構成
+プランナー　2人
+デザイナー　4人
+プログラマ　3人
