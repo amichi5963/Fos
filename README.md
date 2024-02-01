@@ -78,3 +78,5 @@ Priorityの高いCinemachineVirtualCameraと見えない壁のPlaneを有効化�
 - プランナー　2人
 - デザイナー　4人
 - プログラマ　3人
+## 制作期間
+2023/07/18～現在
