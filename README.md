@@ -12,7 +12,7 @@ https://github.com/amichi5963/Fos/assets/104009590/dfb5d647-6774-46d6-9b19-57247
 
 ## 使用技術
 - C#
-- Unity
+- Unity2022/3.4f1
 ## 担当箇所
 メインプログラマーとして、UIやロード処理、スコア処理を除いた処理のほとんどを作成しました。
 ### Assets/Scripts内
