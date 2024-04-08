@@ -53,9 +53,10 @@ public class ResultSystem : MonoBehaviour
                 case 3:
                     loadSceneManager.LoadScene("Level_04");
                     break;
-                case 4:
-                    loadSceneManager.LoadScene("Level_05");
-                    break;
+                //ステージ5以降は未実装
+                //case 4:
+                //    loadSceneManager.LoadScene("Level_05");
+                //    break;
                 default:
                     loadSceneManager.LoadScene("TitleScene");
                     break;
