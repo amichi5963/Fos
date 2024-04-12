@@ -2634,7 +2634,7 @@ Transform:
   - {fileID: 1347450753339816730}
   - {fileID: 7908111592602966582}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5021559619947448790
 MonoBehaviour:
@@ -2660,7 +2660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1357144ecdd6afd4e913d255624a66e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stones:
+  stoneObjects:
   - {fileID: 7370309443033259450}
   - {fileID: 1685459840125820388}
   - {fileID: 7595157162391392062}
@@ -2668,38 +2668,29 @@ MonoBehaviour:
   - {fileID: 8390693508534986034}
   - {fileID: 2157443566008717542}
   throwForce: 20
-  Grasses:
+  grassObjects:
   - {fileID: 5523735718524534137}
   - {fileID: 8200240189844107824}
-  Vine: {fileID: 825837293661255481}
-  GrassesParent: {fileID: 4826688483893886945}
-  GRASS_LENGTH_MAX: 12
+  vineObject: {fileID: 825837293661255481}
+  grassParentObject: {fileID: 4826688483893886945}
   rotateSpeed: 360
-  GrassAtackEffect: {fileID: 3805203155296454782, guid: d2799f211c3eef34bad4ee3d501797be, type: 3}
-  callRadius: 5
-  parasiteRadius: 2
-  acc: 30
-  jumpPower: 6.25
-  MainBody: {fileID: 4864013382878048698}
-  KinokoMass: 1
-  StoneMass: 1.25
-  GrassMass: 0.75
+  ShrinkPower: 20
+  grassAtackEffectPrefab: {fileID: 3805203155296454782, guid: d2799f211c3eef34bad4ee3d501797be, type: 3}
+  mainBody: {fileID: 4864013382878048698}
+  respawnHeight: 0
+  ParasiteRangeEffect: {fileID: 5339688253937126032, guid: 3af3a253bc892b942bbfefd6707852ce, type: 3}
+  CallRangeEffect: {fileID: 5339688253937126032, guid: 522c49515436ffe4ca1284def2ef849c, type: 3}
+  Smoke: {fileID: 2401602172584502344, guid: 4e8153a0b22ccb448b3464c658d83051, type: 3}
   throwAngleSpeedX: 2
   throwAngleSpeedY: 2
-  XYAxis: {fileID: -1574186827646161435, guid: 88727e8073399a940bc5f5172743ab6a, type: 3}
-  respawnHeight: 0
-  Hani: {fileID: 5339688253937126032, guid: 3af3a253bc892b942bbfefd6707852ce, type: 3}
-  CallRange: {fileID: 5339688253937126032, guid: 522c49515436ffe4ca1284def2ef849c, type: 3}
-  Kemuri: {fileID: 2401602172584502344, guid: 4e8153a0b22ccb448b3464c658d83051, type: 3}
-  LookAt: {fileID: 5688284559152104720}
-  ArukiKinoko:
-  - {fileID: 503054511367766806}
-  - {fileID: 8184118748982093827}
-  - {fileID: 2400360157601297129}
-  KiseiKinoko: {fileID: 8908182684249355580}
-  NokoriKinoko: {fileID: 3453871310090979262, guid: 59964d82cc6c5544983f8b2f88fe1efe, type: 3}
-  OmakeKinoko: {fileID: 8570429707906167026, guid: 7341c93c78a03d540b12303f9d04e0d9, type: 3}
-  ShrinkPower: 20
+  XYAxisInput: {fileID: -1574186827646161435, guid: 88727e8073399a940bc5f5172743ab6a, type: 3}
+  PlayerHead: {fileID: 5688284559152104720}
+  PlayerFoot: {fileID: 1694595792972101868}
+  ArukiKinokoObject:
+  - {fileID: 161211030019832996}
+  KiseiKinokoObject: {fileID: 8908182684249355580}
+  NokoriKinokoObject: {fileID: 3453871310090979262, guid: 59964d82cc6c5544983f8b2f88fe1efe, type: 3}
+  OmakeKinokoObject: {fileID: 8570429707906167026, guid: 7341c93c78a03d540b12303f9d04e0d9, type: 3}
   kinokoStepSE: {fileID: 7485582704053471084}
   grassStepSE: {fileID: 4093778633349797753}
   stoneStepSE: {fileID: 5442568090218370149}
@@ -2718,7 +2709,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 63b981d00098cff4ea44ac1131eb188c, type: 3}
   StoneCallSE:
   - {fileID: 8300000, guid: 8491b05b0d6c90d4b81b1661af483cda, type: 3}
-  ashimoto: {fileID: 1694595792972101868}
 --- !u!54 &2685358089046971613
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2999,7 +2989,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8771468218651435548, guid: 8158e2dc0d1b63c43a5c57c9c0114d18, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7678274790181775498, guid: 8158e2dc0d1b63c43a5c57c9c0114d18, type: 3}
@@ -3085,7 +3076,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8771468218651435548, guid: 8158e2dc0d1b63c43a5c57c9c0114d18, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7408036215556310737, guid: 8158e2dc0d1b63c43a5c57c9c0114d18, type: 3}
@@ -3201,6 +3193,7 @@ PrefabInstance:
       objectReference: {fileID: 5938398483302793927}
     m_RemovedComponents:
     - {fileID: 4254528628409851389, guid: cab2d6e2c8ae64940b4c06439379d35f, type: 3}
+    - {fileID: 4659687031979359882, guid: cab2d6e2c8ae64940b4c06439379d35f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3365,6 +3358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: kinoko_ac02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3453871310090979262, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6509588484127329943, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 12
@@ -3469,9 +3466,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3453871310090979262, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6804378328975569534}
-    - targetCorrespondingSourceObject: {fileID: 3453871310090979262, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5569924546252162950}
     - targetCorrespondingSourceObject: {fileID: 2701757072224318535, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
       insertIndex: -1
@@ -3485,27 +3479,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3453871310090979262, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
   m_PrefabInstance: {fileID: 3301738017791032090}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6804378328975569534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161211030019832996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boneShape: 1
-  drawBones: 1
-  drawTripods: 0
-  boneSize: 1
-  tripodSize: 1
-  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
-  m_Transforms:
-  - {fileID: 2024646032383920357}
-  - {fileID: 5593105842681340879}
 --- !u!114 &5569924546252162950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3538,11 +3511,6 @@ MonoBehaviour:
   collisionColor: {r: 1, g: 0, b: 0, a: 1}
   groundCollisionColor: {r: 0, g: 1, b: 0, a: 1}
   angleLimitDrawScale: 0.05
---- !u!1 &503054511367766806 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3110039362099607564, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
-  m_PrefabInstance: {fileID: 3301738017791032090}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &625068536871669597 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2701757072224318535, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
@@ -3594,11 +3562,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3587924064203961343, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
   m_PrefabInstance: {fileID: 3301738017791032090}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2400360157601297129 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 909142062757399027, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
-  m_PrefabInstance: {fileID: 3301738017791032090}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2679564540433076765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 647842127143315719, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
@@ -3640,16 +3603,6 @@ MonoBehaviour:
   sphereColliders: []
   capsuleColliders: []
   panelColliders: []
---- !u!4 &5593105842681340879 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6939085067926427861, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
-  m_PrefabInstance: {fileID: 3301738017791032090}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8184118748982093827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6647864591636697881, guid: 98c3bf509c3fe134e96fa7754f71d4f1, type: 3}
-  m_PrefabInstance: {fileID: 3301738017791032090}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3551487165595374863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4144,6 +4097,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: stoneForPlayer Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3132380232805923975, guid: 211a0c7f40fbed94f81208fc069a8af3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030696527861356230, guid: 211a0c7f40fbed94f81208fc069a8af3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 344590991784993718, guid: 211a0c7f40fbed94f81208fc069a8af3, type: 3}
     m_RemovedGameObjects: []
@@ -4334,7 +4295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0807e61a135c784ea50c1bc1caf2026, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
